@@ -123,7 +123,7 @@ with st.expander("So funktioniert ein Koordinationsspiel", expanded=True):
 | Begriff | Bedeutung | Wo gezeigt |
 |---|---|---|
 | **Auszahlungsdominanz** | Das Gleichgewicht, in dem beide am meisten bekommen (a gegen b). | Tab 1 |
-| **Risikodominanz** | Das Gleichgewicht mit dem größeren Einzugsbereich: Weicht der andere ab, verliere ich dort weniger (a − d gegen b − c). | Tab 1, Tab 2 |
+| **Risikodominanz** | Das Gleichgewicht, von dem abzuweichen mehr kostet (a − d gegen b − c); es hat den größeren Einzugsbereich. | Tab 1, Tab 2 |
 | **Einzugsbereich** | Die Anfangsanteile, von denen aus eine Lernregel bei diesem Gleichgewicht endet. Für „alle bündeln“ ist das der Bereich oberhalb von p\\*, seine Größe 1 − p\\*. | Tab 2 |
         """
     )

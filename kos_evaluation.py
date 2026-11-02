@@ -280,7 +280,7 @@ def verdict_roles(v: RolesView) -> tuple[str, str]:
             f"(Wunsch der Rolle 1); {pct(s['unreached'])} kommen nirgends an. Mit 30 + 30 Spielern und bester Antwort (Start 1/2 je Spieler, {v.br_runs} Läufe) sind es {pct(v.br_share_00)}.")
     if r1 == r2:
         return "info", text + " Gleich starke Rollen: Der Wert liegt nahe der Hälfte; die Wunschoptionen sind austauschbar."
-    return "info", text + f" Die stärkere Wunschoption (Rolle 1: {r1} gegen {r2}) gewinnt mehr Anfangspunkte; die Zahl folgt nicht aus den vier Quadranten um den Mischpunkt allein (sie führen nur {pct(s['direct_00'])} aller Anfangspunkte direkt zu „Option 0“)."
+    return "info", text + f" Die Option mit dem größeren Wert (Rolle {1 if r1 > r2 else 2}: {max(r1, r2)} gegen {min(r1, r2)}) gewinnt mehr Anfangspunkte; die Zahl folgt nicht aus den vier Quadranten um den Mischpunkt allein (sie führen nur {pct(s['direct_00'])} aller Anfangspunkte direkt zu „Option 0“)."
 
 
 # ---------------------------------------------------------------------------------------------------------------------------- Tab 5: Schwellen
@@ -361,7 +361,7 @@ def verdict_e1_random(rows) -> tuple[str, str]:
     """E1a: Anteil der Koordinationsspiele, in denen das auszahlungsdominante Gleichgewicht risikodominiert ist, für beide Ziehungsarten. Die Verteilung der Auszahlungen steht im Satz."""
     g, h = _row(rows, mode=S.MODE_GENERAL), _row(rows, mode=S.MODE_SAFE_H)
     return "warning", (f"Bei unabhängig gleichverteilten Auszahlungen auf [0, 10) (nur Spiele mit a > d, b > c, a ≠ b; im Mittel {f"{g['games']:,.0f}".replace(",", ".")} Spiele je Strom, {g['seeds']} Ströme) "
-                       f"ist das auszahlungsdominante Gleichgewicht in {pct(g['risk_dominated'])} der Spiele risikodominiert (Streuung über die Ströme {pct(g['risk_dominated_std'])}), sein mittlerer Einzugsbereich ist {de(g['mean_basin'], 3)}. "
+                       f"ist das auszahlungsdominante Gleichgewicht in {pct(g['risk_dominated'])} dieser Koordinationsspiele risikodominiert (Streuung über die Ströme {pct(g['risk_dominated_std'])}), sein mittlerer Einzugsbereich ist {de(g['mean_basin'], 3)}. "
                        f"Zahlt Direkt-Fahren unabhängig vom anderen (d = b, „sicherer Hase“), sind es {pct(h['risk_dominated'])}. "
                        "Die Anteile gehören zu dieser Ziehung der Auszahlungen; mit anderer Verteilung sind es andere Zahlen.")
 
