@@ -1,7 +1,6 @@
 # Koordinationsspiele: wenn Gleichwahl belohnt wird – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-koordinationsspiel-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-koordinationsspiel-demo.streamlit.app/)**
 
 Erstes Stück der Reihe **Koordinationsspiele** in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“, ihre Wurzel. Vehikel: **Bündelung am Hub.** Jeder Betrieb fährt direkt (sicher) oder bündelt am Hub (lohnt nur, wenn genug andere mitmachen), die Auszahlung ist die Zeitersparnis je Sendung in Minuten. Die Demo zeigt die Gleichgewichte eines solchen Spiels, den **Einzugsbereich** jedes Gleichgewichts, den **Start ohne Absprache**, die Wirkung von **Logit-Lernen** (Gibbs-Maß des Potentials), **zwei Rollen** mit verschiedenen Vorlieben, **verteilte Schwellen** nach Granovetter und den Gegenfall, in dem Gleichwahl bestraft wird.
 
@@ -133,4 +132,4 @@ pytest tests/ -v
 
 Gebaut mit Streamlit, Plotly, NumPy und fpdf2.
 
-Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zu den Demos: [Interaktive Demos](https://sebastianhanisch.net/demos.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Koordinationsspiele: von Gleichwahl bis Kaskade](https://sebastianhanisch.net/konzepte-koordinationsspiele.html).

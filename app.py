@@ -113,6 +113,21 @@ Weiter unten: sechs Tabs mit je einem **🔬 Experiment**, der Abschnitt **🚧 
 """
 )
 
+# erklaerseite:einfach:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/hirschjagd-erklaert.json, nicht von Hand ändern)
+with st.expander("💬 In einfachen Worten"):
+    st.markdown(
+        """
+Jeder Betrieb wählt, ob er **am Hub bündelt** oder **direkt fährt**. Bündeln lohnt sich nur, wenn genug andere mitmachen; wer allein bündelt, verliert Zeit. Daraus folgen mehrere **Gleichgewichte**, Zustände, in denen keiner allein etwas ändern will: alle bündeln, alle fahren direkt und ein wackliger Zustand dazwischen. Das Spiel heißt **Hirschjagd**: Der Hirsch (alle bündeln) ist für alle am besten, der Hase (direkt fahren) ist sicher.
+
+Die Frage ist, **in welches Gleichgewicht eine Gruppe läuft**. Die Grenze liegt bei dem Anteil Bündelnder, ab dem Bündeln besser ist (die Schwelle). Wer wenig gewinnt, wenn alle mitmachen, aber viel verliert, wenn er allein bündelt, bekommt eine hohe Grenze: Dann hat „direkt fahren“ den größeren **Einzugsbereich**, obwohl „alle bündeln“ besser wäre. Das ist **Risikodominanz**.
+
+Alle Ergebnisse stammen aus gewählten Auszahlungen und Lernregeln (beste Antwort, Replikator, Logit), nicht aus Messungen an Menschen oder Terminals.
+
+[Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/hirschjagd-erklaert.html)
+        """
+    )
+# erklaerseite:einfach:end
+
 with st.expander("So funktioniert ein Koordinationsspiel", expanded=True):
     st.markdown(
         """
@@ -375,6 +390,25 @@ st.markdown(
 
 st.markdown("---")
 with st.expander("📐 Mathematische Formulierung"):
+    # erklaerseite:lesehilfe:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/hirschjagd-erklaert.json, nicht von Hand ändern)
+    st.markdown(
+        r"""
+**Lesehilfe.** Gegeben ist ein symmetrisches 2×2-Spiel mit den Auszahlungen $a, b, c, d$; gesucht sind seine Gleichgewichte, ihre Einzugsbereiche und die Verteilung, die Logit-Lernen annimmt.
+
+| Symbol | Bedeutung |
+|---|---|
+| $a, b$ | Auszahlung, wenn beide bündeln bzw. beide direkt fahren |
+| $c, d$ | Auszahlung, wenn ich bündele und der andere direkt fährt bzw. umgekehrt |
+| $x$ | Anteil der Bündelnden |
+| $p^*$ | Anteil, bei dem Bündeln und Direktfahren gleich viel zahlen |
+| $n,\ k$ | Zahl der Betriebe, Zahl der Bündelnden |
+| $\beta$ | Schärfe des Logit-Lernens |
+| $\Phi$ | Potential |
+
+[Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/hirschjagd-erklaert.html#fachleute)
+        """
+    )
+    # erklaerseite:lesehilfe:end
     st.markdown(
         r"""
 **Lesehilfe.** Gegeben ist ein symmetrisches 2×2-Spiel mit den Auszahlungen $a, b, c, d$; gesucht sind seine Gleichgewichte, ihre Einzugsbereiche und die Verteilung, die Logit-Lernen annimmt.
@@ -441,5 +475,5 @@ st.markdown("---")
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
     "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
-    "Mehr zu den Demos: [Interaktive Demos](https://sebastianhanisch.net/demos.html)."
+    "Mehr zur Reihe: [Koordinationsspiele: von Gleichwahl bis Kaskade](https://sebastianhanisch.net/konzepte-koordinationsspiele.html)."
 )
