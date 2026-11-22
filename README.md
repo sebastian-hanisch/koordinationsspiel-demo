@@ -8,7 +8,7 @@ Abgrenzung: Im Überlastungsspiel der `nash-demo` meiden die Lkw dasselbe Tor; d
 
 ## Kernfrage
 
-*Wenn jeder dasselbe wählen will: welche Gleichgewichte gibt es, in welches läuft man, und ist das auszahlungsdominante auch das gewählte?* Risikodominanz, Hirschjagd und der Einzugsbereich 1 − p\* sind Lehrbuchstoff (Harsanyi und Selten 1988, Kandori, Mailath und Rob 1993). Eigenes dieser Demo sind (1) die **Zahlen über Zufallsspiele**, (2) der **exakte Start ohne Absprache** im Bündelungs-Vehikel (Kette über die Zahl der Bündelnden, in Brüchen), (3) der Beleg, dass das Gibbs-Maß die Logit-Kette trifft, (4) der Kampf der Geschlechter mit gemessenen Einzugsbereichen und (5) die Streuung im Granovetter-Modell.
+*Wenn jeder dasselbe wählen will: welche Gleichgewichte gibt es, in welches läuft man, und ist das auszahlungsdominante auch das gewählte?* Risikodominanz (risk dominance), Hirschjagd (Stag Hunt) und der Einzugsbereich (basin of attraction) 1 − p\* sind Lehrbuchstoff (Harsanyi und Selten 1988, Kandori, Mailath und Rob 1993). Eigenes dieser Demo sind (1) die **Zahlen über Zufallsspiele**, (2) der **exakte Start ohne Absprache** im Bündelungs-Vehikel (Kette über die Zahl der Bündelnden, in Brüchen), (3) der Beleg, dass das Gibbs-Maß die Logit-Kette trifft, (4) der Kampf der Geschlechter mit gemessenen Einzugsbereichen und (5) die Streuung im Granovetter-Modell.
 
 ## Befunde und Korrekturen gegenüber dem Plan
 
